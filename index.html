@@ -5,16 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Dreamer</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/index.css">
 </head>
 
-<body>
+<body class="cuerpo">
     <!-- Content -->
     <header>
-        <nav class="navbar bg-light">
-            <div class="container-fluid">
-                <p class="navbar-brand">Dream seller</p>
+        <nav class="navbar">
+            <div class="navbarA">
                 <a class="navbar-brand" href="#">the dreamer</a>
                 <a class="navbar-brand" href="#">dreams</a>
                 <a class="navbar-brand" href="#">announcement</a>
@@ -24,22 +25,27 @@
     </header>
     <section>
         <!-- About me -->
-        <article>
+        <article class="articles aboutMe">
             <div>
-                <h2>The dreamer</h2>
+                <h1 class="aboutMeTitle">The dreamer</h1>
             </div>
-            <img src="./img/Captura de pantalla 2022-04-20 190408.png">
-            <div>
-                <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam"</p>
+            <div class="aboutMeTextImg">
+                <div>
+                    <img src="./img/caraDiego.png">
+                </div>
+                <div>
+                    <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam"</p>
+                </div>
             </div>
         </article>
     </section>
     <section>
         <!-- Carousel type of dreams  -->
-        <article>
+        <article class="articles ">
             <div>
-                <h3>Pick a Dream</h3>
+                <h2>Pick a Dream</h2>
             </div>
             <div>
                 <!-- Dream description -->
@@ -58,23 +64,22 @@
                             aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./img/141e60d5c88c9c2809dc2d0b0f82d3fb.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-item active box">
+                            <img src="./img/141e60d5c88c9c2809dc2d0b0f82d3fb.jpg" class="d-block" alt="...">
                             <div class="carousel-caption d-md-block">
                                 <h5>Sweet Dreams</h5>
                                 <p>Some representative placeholder content for the first slide.</p>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="./img/zilean-lol-legends-of-runeterra-hd-wallpaper-1920x1080-uhdpaper.com-90.0_a - copia.jpg"
-                                class="d-block w-100" alt="...">
+                        <div class="carousel-item box">
+                            <img src="./img/lofi-girl-jinx-lol-uhdpaper.com-hd-3.3244.jpg" class="d-block" alt="...">
                             <div class="carousel-caption d-md-block">
                                 <h5>Work in progress</h5>
                                 <p>Some representative placeholder content for the second slide.</p>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="img/thumb-1920-552086.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-item box">
+                            <img src="img/thumb-1920-552086.jpg" class="d-block" alt="...">
                             <div class="carousel-caption d-md-block">
                                 <h5>Nightmares</h5>
                                 <p>Some representative placeholder content for the third slide.</p>
@@ -95,79 +100,98 @@
             </div>
         </article>
         <br>
-        <article>
+        <!-- Table -->
+        <article class="articles">
             <table class="table">
-                <h4>Dream list</h4>
-                <thead><tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Description</th>
-                    <th scope="col">...</th>
-                  </tr></thead>
+                <h2>Dream list</h2>
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">...</th>
+                    </tr>
+                </thead>
                 <tbody>
                     <tr>
                         <th scope="row">1</th>
                         <td>Red</td>
-                        <td>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        <td>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore
                             et dolore magna aliqua. Ut enim ad minim veniam"</td>
                         <td>github</td>
-                      </tr>
-                      <tr>
+                    </tr>
+                    <tr>
                         <th scope="row">2</th>
                         <td>Yellow</td>
-                        <td>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        <td>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore
                             et dolore magna aliqua. Ut enim ad minim veniam"</td>
                         <td>github</td>
-                      </tr>
-                      <tr>
+                    </tr>
+                    <tr>
                         <th scope="row">3</th>
-                        <td >Blue</td>
-                        <td>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        <td>Blue</td>
+                        <td>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore
                             et dolore magna aliqua. Ut enim ad minim veniam"</td>
                         <td>github</td>
-                      </tr>
+                    </tr>
                 </tbody>
             </table>
         </article>
     </section>
     <section>
-        <!-- About me -->
-        <article>
+        <!-- Announcement -->
+        <article class="articles">
             <div>
                 <h2>Dream announcement</h2>
             </div>
-            <img src="img/lofi-girl-jinx-lol-uhdpaper.com-hd-3.3244.jpg">
+            <div class="box">
+                <img src="img/zilean-lol-legends-of-runeterra-hd-wallpaper-1920x1080-uhdpaper.com-90.0_a - copia.jpg">
+            </div>
             <div>
                 <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam"</p>
             </div>
         </article>
     </section>
-    <section>
-        <article>
-            <form action="">
-                <div>
-                    <label for="">Your name</label>
-                    <input type="text" placeholder="Alexample">
-                </div>
-                <div><label for="">Your e-mail</label>
-                    <input type="email" placeholder="alexample@ejm.com">
-                </div>
-                <div>
-                    <label for="">Please ask me =)</label>
-                    <input type="text">
-                </div>
-                <button>Submit</button>
-            </form>
-        </article>
-    </section>
+
     <footer>
-        <article>
-            <div>My email</div>
-            <div>My github</div>
-            <div>copyrights</div>
-        </article>
+
+        <section>
+            <!-- Form -->
+            <article class="articles">
+                <form action="" class="askForm">
+                    <div class="formRow">
+                        <div class="formColumn">
+                            <label for="">Your name</label>
+                            <input type="text" placeholder="Alexample">
+                        </div>
+                        <div class="formColumn">
+                            <label for="">Your e-mail</label>
+                            <input type="email" placeholder="alexample@ejm.com">
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div class="formColumn">
+                            <label for="">Please ask me =)</label>
+                            <input type="text">
+                        </div>
+                    <div class="formColumn">
+                        <button >Submit</button>
+                    </div>
+                    </div>
+                </form>
+            </article>
+            <!-- Personal data -->
+            <article class="articles">
+                <div>My github</div>
+                <div>copyrights</div>
+            </article>
+        </section>
     </footer>
+    <script src="./tsjs/output/ts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
