@@ -3,21 +3,27 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { ButtonComponent } from './components/button/button.component';
-import { TasksComponent } from './components/tasks/tasks.component';
-import { TasksItemComponent } from './components/tasks-item/tasks-item.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AboutMeComponent } from './components/about-me/about-me.component';
+import { CarrouselComponent } from './components/carrousel/carrousel.component';
+import { TableComponent } from './components/table/table.component';
+import { AnnouncementComponent } from './components/announcement/announcement.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ButtonComponent,
-    TasksComponent,
-    TasksItemComponent
+    AboutMeComponent,
+    CarrouselComponent,
+    TableComponent,
+    AnnouncementComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     FontAwesomeModule
   ],
   providers: [],

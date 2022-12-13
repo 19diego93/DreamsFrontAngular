@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {faPenToSquare} from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-table',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent {
+  faPenToSquare=faPenToSquare;
 
 }

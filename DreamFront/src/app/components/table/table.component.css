@@ -1,0 +1,10 @@
+.table{
+    background-color: rgba(90, 150, 199, 0.493);
+    border: 2px solid rgba(79, 211, 156, 0.61);
+}
+
+.tableBox{
+    width: 95%;
+    margin: auto;
+    
+}

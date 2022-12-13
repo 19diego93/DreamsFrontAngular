@@ -1,79 +1,135 @@
-/* You can add global styles to this file, and also import other style files */
-@font-face {
-    font-family: 'Poppins';
-    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-}
-
-*{
+html {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body{
-    font-family: sans-serif;    
-}
-
-.container{
-    max-width: 500px;
-    margin: 30px auto;
-    overflow: auto;
-    min-height: 300px;
-    border: 1px solid steelblue;
-    padding: 30px;
-    border-radius: 5px;
-}
-
-.btn {
-    display: inline-block;
-    background: #000;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: inherit;
-}
-.btn:focus {
-    outline: none;
-}
-.btn:active {
-    transform: scale(0.98);
-}
-.btn-block {
-    display: block;
+  }
+  /* body */
+  body {
+    background: linear-gradient(-45deg, #c95b3a, #e73c7e, #1c8cb4, #13a180);
+    background-size: 600% 600%;
+    animation: gradient 30s ease infinite;
+    height: 100vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  /* head */
+  .navbar {
     width: 100%;
-}
-
-.form-control {
-    margin: 20px 0;
-}
-
-.form-control label {
-    display: block;
-}
-
-.form-control input {
+    background-color: rgba(249, 249, 253, 0.123);
+    text-shadow: #fc0 1px 0 10px;
+  }
+  .navbarA {
     width: 100%;
-    height: 40px;
-    margin: 5px;
-    padding: 3px 7px;
-    font-size: 17px;
-}
-
-.form-control-check {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+  
+  .navbar a {
+    font-family: "Roboto Condensed", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    color: rgb(247, 239, 239);
+  }
+  /* articles */
+  .articles {
+    margin: 25px;
+    border:1px rgba(122, 220, 238, 0.63) solid;
+    background-color: #943ce777;
+  }
+  .artTitle{
+    padding-top: 10px;
+    text-align: center;
+    color: aliceblue
+}
+  .box img {
+    width: 100%;
+    max-height: 500px;
+  }
+
+  .descriptionText{
+    padding: 20px;
 }
 
-.form-control-check label {
+  .aboutMe {
+    background-color: #943ce777;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border:1px rgba(122, 220, 238, 0.63) solid;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px
+  }
+  .titleBtnBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  .aboutMeTitle {
+    font-family: sans-serif;
+    text-align: center;
+    color: aliceblue;
+  }
+  .aboutMeTextImg {
+    display: flex;
+    flex-direction: row;
+  }
+  .aboutMeTextImg p {
+    text-align: center;
+    padding: 10px;
+  }
+  .aboutMeTextImg img {
+    border-radius: 50%;
+    width: 100%;
+    min-width: 120px;
+    border: 5px solid rgba(248, 92, 92, 0.411);
+  }
+  .sigil img {
+    border-radius: 30%;
+    width: 70px;
+  }
+  
+  /* footer */
+  footer {
+    background-color:  rgb(85 23 220);
+    
+    padding: 5px;
+  }
+  
+  footer div {
+    text-align: center;
+    color: white;
+    }
+  .askForm {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     
+  
+  }
+  .formRow{
+    display: flex;
+  
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+  }
+  .formColumn {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
     flex: 1;
-}
-
-.form-control-check input {
-    flex: 2;
-    height: 20px;
-}
+  }
+  .btn{
+    color:black;
+   }
+  
+  
