@@ -1,8 +1,26 @@
 {
-    "Name": "Diego Vallejo",
-    "Position": "Web Developer",
-    "Location":"Buenos Aires (Argentina)",
-    "Education":"Graduado de DH",
-    "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-    "ImgFace":"../assets/img/caraDiego.png"
+  "Name": "Diego Vallejo",
+  "Position": "Web Developer",
+  "Location": "Buenos Aires (Argentina)",
+  "Education": "Graduado de DH",
+  "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+  "ImgFace": "../assets/img/caraDiego.png",
+
+  "proyectList": [
+    {
+      "name": "Red",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "url": "github.Red.com"
+    },
+    {
+      "name": "Yellow",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "url": "github.Yellow.com"
+    },
+    {
+      "name": "Blue",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "url": "github.Blue.com"
+    }
+  ]
 }

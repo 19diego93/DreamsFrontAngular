@@ -17,30 +17,13 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Red</td>
-                    <td>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam"</td>
-                    <td>github</td>
+                <tr *ngFor="let proyect of proyectList">
+                    
+                    <td>{{proyect.name}}</td>
+                    <td>{{proyect.description}}</td>
+                    <td>{{proyect}}</td>
                 </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Yellow</td>
-                    <td>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam"</td>
-                    <td>github</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Blue</td>
-                    <td>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam"</td>
-                    <td>github</td>
-                </tr>
+                
             </tbody>
         </table>
     </div>
