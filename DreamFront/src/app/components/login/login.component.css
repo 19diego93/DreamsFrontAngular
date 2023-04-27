@@ -1,0 +1,15 @@
+.tarjetaLogin{
+font-size: 1rem;
+line-height: 2.15;
+padding-left: .75em;
+padding-right: .75em;
+top:13px
+}
+.dentroTarjeta{
+    padding: 20px;
+    text-align: center;
+    
+}
+.tarjetaBoton{
+    width: 60%;   
+}

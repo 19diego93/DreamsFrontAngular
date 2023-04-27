@@ -1,0 +1,24 @@
+.row{
+  text-align: center;
+  justify-content: center;
+}
+.row li{
+ text-align: left;
+ padding: 15px;
+}
+.row p{
+  text-align: justify;
+}
+h2{
+  padding-top:20px ;
+  padding-bottom: 10px;
+  color: aliceblue;
+}
+h5, h6{
+  display: inline;
+}
+/* .trabajoAnio{
+  display: flex;
+  flex-direction: row;
+
+} */

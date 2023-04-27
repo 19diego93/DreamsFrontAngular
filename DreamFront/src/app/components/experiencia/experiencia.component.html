@@ -1,0 +1,51 @@
+<div class="articles">
+    <div class="row">
+        <!-- Titulo -->
+        <h2>Experiencia Laboral</h2>
+        <div class="col-lg-2">
+            <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+                Nueva Experiencia
+            </button>
+        </div>
+        <div class="col-lg-11 col-md-11 col-xs-11">
+            <table class="table">
+                <tbody>
+                    <tr *ngFor="let Experiencia of expe">
+                        <td>
+                            <h4>{{Experiencia.nombreE}}</h4>
+                        </td>
+                        <td>{{Experiencia.descripcionE}}</td>
+                        <td *ngIf="isLogged"><button class="btn btn-dark"
+                                routerLink="/editexp/{{Experiencia.id}}">EDITAR </button></td>
+                        <td *ngIf="isLogged"><button class="btn btn-danger"
+                                (click)="delete(Experiencia.id)">BORRAR</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- <div class="col-lg-10">
+            
+            <ul>
+                <li class="trabajoAnio">
+                    <h5>Trabajo 1</h5> - <h6>(años)</h6>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem optio rerum id aut facilis sequi,
+                        deserunt culpa sunt repellendus temporibus quasi architecto eum, voluptatum, error reiciendis
+                        accusamus quibusdam! Totam, maiores!</p>
+                </li>
+                <li class="trabajoAnio">
+                    <h5>Trabajo 2</h5> - <h6>(años)</h6>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem optio rerum id aut facilis sequi,
+                        deserunt culpa sunt repellendus temporibus quasi architecto eum, voluptatum, error reiciendis
+                        accusamus quibusdam! Totam, maiores!</p>
+                </li>
+                <li class="trabajoAnio">
+                    <h5>Trabajo 3</h5> - <h6>(años)</h6>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem optio rerum id aut facilis sequi,
+                        deserunt culpa sunt repellendus temporibus quasi architecto eum, voluptatum, error reiciendis
+                        accusamus quibusdam! Totam, maiores!</p>
+                </li>
+            </ul>
+        </div> -->
+    </div>
+
+</div>
